@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fr.jismen.jismen.Menu_activity"
+    android:background="#4EC67F">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon compte"
+        android:drawableBottom="@drawable/ic_face_black_24dp"
+        android:id="@+id/btnAccount"
+        android:background="#34495E"
+        android:textColor="#FFFFFF"
+        android:width="200dp"
+        android:drawableTint="#ffffff"
+        android:padding="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnFav" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes favoris"
+        android:drawableBottom="@drawable/ic_favorite_border_black_24dp"
+        android:id="@+id/btnFav"
+        android:layout_marginTop="46dp"
+        android:background="#34495E"
+        android:textColor="#FFFFFF"
+        android:width="200dp"
+        android:drawableTint="#ffffff"
+        android:padding="15dp"
+        android:layout_below="@+id/btnAccount"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tout Jismen"
+        android:drawableBottom="@drawable/ic_shopping_cart_black_24dp"
+        android:id="@+id/btnAllProd"
+        android:layout_marginTop="40dp"
+        android:background="#34495E"
+        android:textColor="#FFFFFF"
+        android:width="200dp"
+        android:drawableTint="#ffffff"
+        android:paddingTop="15dp"
+        android:padding="15dp"
+        android:layout_below="@+id/btnFav"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Déconnexion"
+        android:id="@+id/btnDisconnect"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+        android:background="#34495E"
+        android:textStyle="bold"
+        android:layout_alignEnd="@+id/btnAllProd"
+        android:layout_alignStart="@+id/btnAllProd" />
+
+</RelativeLayout>

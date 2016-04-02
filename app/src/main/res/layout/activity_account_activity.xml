@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1.0"
+    tools:context="fr.jismen.jismen.Account_activity"
+    android:background="#4ec67f">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mes informations"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:background="#5E6E80"
+        android:password="false"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modifier"
+        android:id="@+id/btnEdit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom :"
+        android:id="@+id/textView5"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/accName"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prénom :"
+        android:id="@+id/textView6"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/accFisrtname"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse :"
+        android:id="@+id/textView7"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/accAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code postal :"
+        android:id="@+id/textView8"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/accPc"
+        android:layout_alignStart="@+id/textView9" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Newsletter ?"
+        android:id="@+id/accNewsletter"
+        android:checked="false"
+        android:textStyle="bold"
+        android:layout_below="@+id/accCity"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ville :"
+        android:id="@+id/textView9"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/accCity"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date de naissance :"
+        android:id="@+id/textView10"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/accBirthday"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:id="@+id/textView11"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/accEmail"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/accName"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="60dp"
+        android:layout_alignEnd="@+id/accEmail"
+        android:layout_alignStart="@+id/accEmail"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/accFisrtname"
+        android:layout_below="@+id/accName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/accName"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/accBirthday"
+        android:layout_below="@+id/accEmail"
+        android:layout_alignEnd="@+id/accEmail"
+        android:layout_alignStart="@+id/accEmail"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="date" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/accPc"
+        android:layout_below="@+id/accAddress"
+        android:layout_alignEnd="@+id/accCity"
+        android:layout_alignStart="@+id/accAddress"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/accAddress"
+        android:layout_below="@+id/accBirthday"
+        android:layout_alignParentEnd="true"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/accEmail"
+        android:layout_below="@+id/accFisrtname"
+        android:layout_alignParentEnd="true"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/accCity"
+        android:layout_below="@+id/accPc"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/accAddress"
+        android:maxLines="1"
+        android:singleLine="true" />
+</RelativeLayout>
